@@ -1,0 +1,15 @@
+[project]
+name = "powerbi-report-agent"
+version = "0.1.0"
+description = "AI-assisted planner for generating Power BI reports from tabular data"
+authors = [{name = "Power BI Agent"}]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "pandas>=2.0",
+  "openpyxl>=3.1",
+  "requests>=2.31"
+]
+
+[project.scripts]
+powerbi-agent = "powerbi_agent.main:main"
